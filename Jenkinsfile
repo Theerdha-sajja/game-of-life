@@ -6,7 +6,7 @@ pipeline{
 					steps{
 						
 						//sh "git fetch https://github.com/Theerdha-sajja/game-of-life.git"
-						cd "game-of-life/"
+						//cd "game-of-life/"
 					        sh "mvn validate"
 					      }
 				     }
