@@ -1,7 +1,7 @@
 pipeline{
 		agent any
 	stages{
-		       stage('three'){
+		       stage('clean'){
 			               
 					steps{
 	                                         sh "mvn --version"
@@ -9,6 +9,18 @@ pipeline{
 						sh "git --version"
 						sh "ls"
 						sh "mvn clean"
+					      }
+				            }
+		         stage('compile'){
+			               
+					steps{
+						sh "mvn compile"
+					      }
+				            }
+		         stage('package'){
+			               
+					steps{
+						sh "mvn package"
 					      }
 				            }
 
