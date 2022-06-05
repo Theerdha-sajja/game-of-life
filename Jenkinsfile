@@ -8,6 +8,7 @@ pipeline{
 						 sh "java --version"
 						sh "git --version"
 						sh "ls"
+						sh "mvn clean"
 					      }
 				            }
 
