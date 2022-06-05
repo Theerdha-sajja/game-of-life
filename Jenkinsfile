@@ -4,8 +4,8 @@ pipeline{
 		       stage('three'){
 			               
 					steps{
-						
-						//sh "git fetch https://github.com/Theerdha-sajja/game-of-life.git"
+						sh "git remote add orgin https://github.com/Theerdha-sajja/game-of-life.git"
+						sh "git pull origin master"
 						//cd "game-of-life/"
 					        sh "mvn validate"
 					      }
