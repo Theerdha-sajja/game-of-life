@@ -4,8 +4,9 @@ pipeline{
 		       stage('three'){
 			               
 					steps{
+						
+						sh "git clone https://github.com/Theerdha-sajja/game-of-life.git"
 						cd game-of-life
-						sh "git clone https://github.com/Theerdha-sajja/Pipeline.git"
 					        sh "mvn validate"
 					      }
 				     }
