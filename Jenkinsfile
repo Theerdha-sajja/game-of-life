@@ -5,7 +5,7 @@ pipeline{
 			               
 					steps{
 						cd game-of-life
-						//bat "git clone   https://github.com/Theerdha-sajja/Pipeline.git"
+						sh "git clone https://github.com/Theerdha-sajja/Pipeline.git"
 					        sh "mvn validate"
 					      }
 				     }
