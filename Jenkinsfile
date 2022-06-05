@@ -4,21 +4,12 @@ pipeline{
 		       stage('three'){
 			               
 					steps{
-						sh "git remote add orgin https://github.com/Theerdha-sajja/game-of-life.git"
-						sh "git pull origin master"
-						//cd "game-of-life/"
-					        sh "mvn validate"
+	                                         sh "mvn --version"
+						 sh "java --version"
+						sh "git --version"
+						sh "ls"
 					      }
-				     }
-		       stage('four'){
-					 steps{
-					        sh "mvn compile"
-					      }
-				    }							
-		       stage('five'){
-					 steps{
-					        sh "mvn package"
-					      }
-                			}
+				            }
+
 			   }
 	    }
